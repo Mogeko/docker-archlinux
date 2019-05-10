@@ -1,4 +1,7 @@
 # docker-archlinux
+
+[![Docker Status](https://img.shields.io/docker/cloud/build/mogeko/archlinux.svg?label=Docker)](https://hub.docker.com/r/mogeko/archlinux)
+
 An archlinux image that can be logged in with ssh
 
 ## Usage
