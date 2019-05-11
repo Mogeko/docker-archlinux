@@ -8,13 +8,13 @@ An archlinux image that can be logged in with ssh
 Copy and paste to pull this image:
 
 ```
-$ docker pull mogeko/archlinux:root
+$ docker pull mogeko/archlinux
 ```
 
-Run `mogeko/archlinux:root`:
+Run `mogeko/archlinux`:
 
 ```
-$ docker run -itd -p 2222:22 -v $HOME:/home/host --name arch mogeko/archlinux:root
+$ docker run -itd -p 2222:22 -v $HOME:/home/host --name arch mogeko/archlinux
 ```
 
 Entering the container (to update root password):
