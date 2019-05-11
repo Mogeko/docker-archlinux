@@ -2,6 +2,7 @@ FROM archlinux/base
 MAINTAINER mogeko
 EXPOSE 22
 RUN pacman -Syu sudo openssh --noconfirm --needed \
+ && pacman -Scc --noconfirm \
  && rm -f /etc/ssh/ssh_*_key \
  && ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key \
  && ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key \
